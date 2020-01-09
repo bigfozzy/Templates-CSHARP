@@ -1,0 +1,334 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3C259965-CC51-496E-BFC1-69940021A4EB}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>XHE</RootNamespace>
+    <AssemblyName>XHE</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DOM\xhe_anchor.cs" />
+    <Compile Include="DOM\xhe_b.cs" />
+    <Compile Include="DOM\xhe_base_dom.cs" />
+    <Compile Include="DOM\xhe_base_visual_dom.cs" />
+    <Compile Include="DOM\xhe_blockquote.cs" />
+    <Compile Include="DOM\xhe_body.cs" />
+    <Compile Include="DOM\xhe_button.cs" />
+    <Compile Include="DOM\xhe_checkbutton.cs" />
+    <Compile Include="DOM\xhe_code.cs" />
+    <Compile Include="DOM\xhe_div.cs" />
+    <Compile Include="DOM\xhe_element.cs" />
+    <Compile Include="DOM\xhe_embed.cs" />
+    <Compile Include="DOM\xhe_flash.cs" />
+    <Compile Include="DOM\xhe_footer.cs" />
+    <Compile Include="DOM\xhe_form.cs" />
+    <Compile Include="DOM\xhe_frame.cs" />
+    <Compile Include="DOM\xhe_h.cs" />
+    <Compile Include="DOM\xhe_head.cs" />
+    <Compile Include="DOM\xhe_header.cs" />
+    <Compile Include="DOM\xhe_hiddeninput.cs" />
+    <Compile Include="DOM\xhe_html.cs" />
+    <Compile Include="DOM\xhe_i.cs" />
+    <Compile Include="DOM\xhe_image.cs" />
+    <Compile Include="DOM\xhe_input.cs" />
+    <Compile Include="DOM\xhe_inputbutton.cs" />
+    <Compile Include="DOM\xhe_inputfile.cs" />
+    <Compile Include="DOM\xhe_inputimage.cs" />
+    <Compile Include="DOM\xhe_interface.cs" />
+    <Compile Include="DOM\xhe_interfaces.cs" />
+    <Compile Include="DOM\xhe_label.cs" />
+    <Compile Include="DOM\xhe_li.cs" />
+    <Compile Include="DOM\xhe_meta.cs" />
+    <Compile Include="DOM\xhe_object.cs" />
+    <Compile Include="DOM\xhe_option.cs" />
+    <Compile Include="DOM\xhe_p.cs" />
+    <Compile Include="DOM\xhe_pre.cs" />
+    <Compile Include="DOM\xhe_radiobox.cs" />
+    <Compile Include="DOM\xhe_s.cs" />
+    <Compile Include="DOM\xhe_scriptelement.cs" />
+    <Compile Include="DOM\xhe_section.cs" />
+    <Compile Include="DOM\xhe_selectelement.cs" />
+    <Compile Include="DOM\xhe_span.cs" />
+    <Compile Include="DOM\xhe_strong.cs" />
+    <Compile Include="DOM\xhe_style.cs" />
+    <Compile Include="DOM\xhe_table.cs" />
+    <Compile Include="DOM\xhe_td.cs" />
+    <Compile Include="DOM\xhe_textarea.cs" />
+    <Compile Include="DOM\xhe_th.cs" />
+    <Compile Include="DOM\xhe_tr.cs" />
+    <Compile Include="DOM\xhe_u.cs" />
+    <Compile Include="DOM\xhe_video.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="System\xhe_clipboard.cs" />
+    <Compile Include="System\xhe_file.cs" />
+    <Compile Include="System\xhe_folder.cs" />
+    <Compile Include="System\xhe_keyboard.cs" />
+    <Compile Include="System\xhe_mouse.cs" />
+    <Compile Include="System\xhe_sound.cs" />
+    <Compile Include="System\xhe_textfile.cs" />
+    <Compile Include="Web\xhe_2captcha.cs" />
+    <Compile Include="Web\xhe_5simnet.cs" />
+    <Compile Include="Web\xhe_anticaptcha.cs" />
+    <Compile Include="Web\xhe_browser.cs" />
+    <Compile Include="Web\xhe_bypasscaptcha.cs" />
+    <Compile Include="Web\xhe_captcha24.cs" />
+    <Compile Include="Web\xhe_captchabot.cs" />
+    <Compile Include="Web\xhe_cheapsms.cs" />
+    <Compile Include="Web\xhe_connection.cs" />
+    <Compile Include="Web\xhe_ftp.cs" />
+    <Compile Include="Web\xhe_harvestor.cs" />
+    <Compile Include="Web\xhe_mail.cs" />
+    <Compile Include="Web\xhe_proxycheker.cs" />
+    <Compile Include="Web\xhe_proxy_switcher.cs" />
+    <Compile Include="Web\xhe_raw.cs" />
+    <Compile Include="Web\xhe_ripcaptcha.cs" />
+    <Compile Include="Web\xhe_rucaptcha.cs" />
+    <Compile Include="Web\xhe_seo.cs" />
+    <Compile Include="Web\xhe_sftp.cs" />
+    <Compile Include="Web\xhe_smsactivate.cs" />
+    <Compile Include="Web\xhe_submitter.cs" />
+    <Compile Include="Web\xhe_webpage.cs" />
+    <Compile Include="Window\xhe_application.cs" />
+    <Compile Include="Window\xhe_debug.cs" />
+    <Compile Include="Window\xhe_scheduler.cs" />
+    <Compile Include="Window\xhe_window.cs" />
+    <Compile Include="Window\xhe_windowsshell.cs" />
+    <Compile Include="Window\xhe_window_interface.cs" />
+    <Compile Include="Window\xhe_window_interfaces.cs" />
+    <Compile Include="XHEApp.cs" />
+    <Compile Include="XHEMailMessage.cs" />
+    <Compile Include="XHEScript.cs" />
+    <Compile Include="XHEScriptBase.cs" />
+    <Compile Include="XHEScriptMulti.cs" />
+    <Compile Include="xhe_base.cs" />
+    <Compile Include="xhe_base_anticaptcha_type_1.cs" />
+    <Compile Include="xhe_base_interface.cs" />
+    <Compile Include="xhe_base_list.cs" />
+    <Compile Include="xhe_base_sms.cs" />
+    <Compile Include="_Helper\Tools\GUI\FormTools.cs" />
+    <Compile Include="_Helper\Tools\GUI\ListBoxTools.cs" />
+    <Compile Include="_Helper\Tools\GUI\MenuItemTools.cs" />
+    <Compile Include="_Helper\Tools\GUI\ShowMessage.cs" />
+    <Compile Include="_Helper\Harvest\InDataFile.cs" />
+    <Compile Include="_Helper\Standart Forms\EditTextFileDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_Helper\Standart Forms\EditTextFileDlg.designer.cs">
+      <DependentUpon>EditTextFileDlg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_Helper\Standart Forms\EnterCaptchaDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_Helper\Standart Forms\EnterCaptchaDlg.designer.cs">
+      <DependentUpon>EnterCaptchaDlg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_Helper\Standart Forms\EnterNumberDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_Helper\Standart Forms\EnterNumberDlg.designer.cs">
+      <DependentUpon>EnterNumberDlg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_Helper\Standart Forms\EnterStringDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_Helper\Standart Forms\EnterStringDlg.designer.cs">
+      <DependentUpon>EnterStringDlg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_Helper\Standart Forms\LoginAndPasswordForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_Helper\Standart Forms\LoginAndPasswordForm.designer.cs">
+      <DependentUpon>LoginAndPasswordForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_Helper\Standart Forms\SplashForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_Helper\Standart Forms\SplashForm.designer.cs">
+      <DependentUpon>SplashForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_Helper\Tools\File\BinaryFileTools.cs" />
+    <Compile Include="_Helper\Tools\File\DiskTools.cs" />
+    <Compile Include="_Helper\Tools\File\FileTools.cs" />
+    <Compile Include="_Helper\Tools\File\ProcessTools.cs" />
+    <Compile Include="_Helper\Tools\File\TextFileTools.cs" />
+    <Compile Include="_Helper\Tools\Folder\FolderTextFilesTools.cs" />
+    <Compile Include="_Helper\Tools\Folder\FolderTools.cs" />
+    <Compile Include="_Helper\Tools\Keyboard\KeyboardTools.cs" />
+    <Compile Include="_Helper\Tools\Log\LogTools.cs" />
+    <Compile Include="_Helper\Tools\Mouse\MouseTools.cs" />
+    <Compile Include="_Helper\Tools\Settings\IniFile.cs" />
+    <Compile Include="_Helper\Tools\String\StringTools.cs" />
+    <Compile Include="_Helper\Tools\Web\HTTPPost.cs" />
+    <Compile Include="_Helper\Tools\Web\HttpTools.cs" />
+    <Compile Include="_Helper\Tools\Web\MailTools.cs" />
+    <Compile Include="_Helper\Tools\Web\Mail\Attachment.cs" />
+    <Compile Include="_Helper\Tools\Web\Mail\Internet.cs" />
+    <Compile Include="_Helper\Tools\Web\Mail\MailDecoder.cs" />
+    <Compile Include="_Helper\Tools\Web\Mail\MailEncoder.cs" />
+    <Compile Include="_Helper\Tools\Web\Mail\MailMessage.cs" />
+    <Compile Include="_Helper\Tools\Web\Mail\Pop3Client.cs" />
+    <Compile Include="_Helper\Tools\Web\Mail\Pop3ClientException.cs" />
+    <Compile Include="_Helper\Tools\Web\Mail\Rtf2Html.cs" />
+    <Compile Include="_Helper\Tools\Web\Mail\SmtpClient.cs" />
+    <Compile Include="_Helper\Tools\Web\Mail\SmtpClientException.cs" />
+    <Compile Include="_Helper\Tools\XML\XMLTools.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_Helper\Standart Forms\EditTextFileDlg.resx">
+      <DependentUpon>EditTextFileDlg.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_Helper\Standart Forms\EditTextFileDlg.ru-RU.resx">
+      <DependentUpon>EditTextFileDlg.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_Helper\Standart Forms\EnterCaptchaDlg.resx">
+      <DependentUpon>EnterCaptchaDlg.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_Helper\Standart Forms\EnterCaptchaDlg.ru-RU.resx">
+      <DependentUpon>EnterCaptchaDlg.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_Helper\Standart Forms\EnterNumberDlg.resx">
+      <DependentUpon>EnterNumberDlg.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_Helper\Standart Forms\EnterNumberDlg.ru-RU.resx">
+      <DependentUpon>EnterNumberDlg.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_Helper\Standart Forms\EnterStringDlg.resx">
+      <DependentUpon>EnterStringDlg.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_Helper\Standart Forms\EnterStringDlg.ru-RU.resx">
+      <DependentUpon>EnterStringDlg.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_Helper\Standart Forms\LoginAndPasswordForm.resx">
+      <DependentUpon>LoginAndPasswordForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_Helper\Standart Forms\LoginAndPasswordForm.ru-RU.resx">
+      <DependentUpon>LoginAndPasswordForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_Helper\Standart Forms\SplashForm.resx">
+      <DependentUpon>SplashForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\about.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Button_Go.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\copy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\copy1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\disk_blue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\disk_blue_ok.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Menu_Navigate_Back.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Menu_Navigate_Forward.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Menu_Navigate_Refresh.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Menu_Navigate_Stop.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\paste.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\TreeFolder.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
