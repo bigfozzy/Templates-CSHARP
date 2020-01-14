@@ -35,7 +35,7 @@ C# Framework for work of Xweb Human Emulator Studio
 
 #### Requirements
 
-Xweb Human Emulator Studio 7.0.43 or later
+[Xweb Human Emulator Studio 7.0.43 or later]
 
 #### Basic
 
@@ -49,9 +49,8 @@ You can use this library in your C# applications to automate actions in the brow
 especially for feature development.
 
 [Visual Studio 2017]:   https://www.visualstudio.com/downloads/
-[.NET Framework 4.7.2]: https://dotnet.microsoft.com/download/dotnet-framework/net472
 [.NET Framework 4.7.2 Developer Pack]: https://dotnet.microsoft.com/download/dotnet-framework/net472
-[Visual C++ 2015 Redistributable]:     https://www.microsoft.com/en-us/download/details.aspx?id=53840
+[Xweb Human Emulator Studio 7.0.43 or later]: http://webemulator.com/
 
 --------------------------------
 
@@ -75,7 +74,7 @@ C# Framework для работы с Xweb Human Emulator Studio
 
 #### Требования для работы
 
-Xweb Human Emulator Studio 7.0.43 или выше
+[Xweb Human Emulator Studio 7.0.43 или выше]
 
 #### Основное
 
@@ -89,7 +88,6 @@ Xweb Human Emulator Studio 7.0.43 или выше
 особенно при разработке функций.
 
 [Visual Studio 2017]:   https://www.visualstudio.com/downloads/
-[.NET Framework 4.7.2]: https://dotnet.microsoft.com/download/dotnet-framework/net472
 [.NET Framework 4.7.2 Developer Pack]: https://dotnet.microsoft.com/download/dotnet-framework/net472
-[Visual C++ 2015 Redistributable]:   https://www.microsoft.com/en-us/download/details.aspx?id=53840
+[Xweb Human Emulator Studio 7.0.43 или выше]: https://humanemulator.info
 
